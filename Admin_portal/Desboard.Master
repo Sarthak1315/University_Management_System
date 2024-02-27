@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Desboard.master.cs" Inherits="University_Management_System.Admin_portal.Desboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>RAMKRISHNA UNIVERCITY</title>
+    <link href="../css/st.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header id="header">
+        <div style="background-color: #666666;">
+    <center>
+        <asp:Image ID="logo_img" runat="server" ImageUrl="~/img/logo_nav.png" cssClass="img_style" Height="113px" Width="443px"/>
+    </center>
+</div>
+    </header>
+    <!--<nav id="nav">
+        <ul>
+            <li><a href="admin.aspx">User List</a></li>
+            <li><a href="#">Add Department</a></li>
+            <li><a href="#">Add Colleges</a></li>
+            <li><a href="#">Add Faculty</a></li>
+            <li><a href="#">Add Course</a></li>
+            <li><a href="#">Add </a></li>
+            <li><a href="#">Add </a></li>
+            <li><a href="#">Add </a></li>
+        </ul>
+    </nav>-->
+        <div class="sidebar">
+    <ul>
+     <li><a href="user_list.aspx"><i class="fas fa-qrcode"></i>User List</a></li>
+     <li><a href="Department.aspx"><i class="fas fa-link"></i>Add Department</a></li>
+     <li><a href="Colleges.aspx"><i class="fas fa-stream"></i>Add Colleges</a></li>
+     <li><a href="Faculty.aspx"><i class="fas fa-calendar-week"></i>Add Faculty</a></li>
+     <li><a href="Course.aspx"><i class="far fa-question-circle"></i>Add Course</a></li>
+     <li><a href="Fee_Structure.aspx"><i class="fas fa-sliders-h"></i>Add Fee Structure</a></li>
+     <li><a href="#"><i class="far fa-envelope"></i>
+         <asp:Button ID="log_out" runat="server" Text="Log Out" OnClick="logout_btn_Click" /></a></li>
+    </ul>
+   </div>
+    <div id="con">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+           
+    </form>
+</body>
+</html>
